@@ -1,6 +1,6 @@
 _My first project in Android Developer Nanodegree course_
 # Popular Movies
-The app allows users to discover the most popular movies playing. The movies are provided by The Movie Database API service https://developers.themoviedb.org/3/getting-started/introduction.
+The app allows users to discover the most popular movies playing. The movies are provided by [The Movie Database API service](https://developers.themoviedb.org/3/getting-started/introduction).
 
 <img src="https://github.com/TanyaYu/PopularMovies/blob/master/screenshots/main.png" height="500"> <img src="https://github.com/TanyaYu/PopularMovies/blob/master/screenshots/details1.png" height="500"> <img src="https://github.com/TanyaYu/PopularMovies/blob/master/screenshots/details2.png" height="500"> <img src="https://github.com/TanyaYu/PopularMovies/blob/master/screenshots/trailers.png" height="500"> <img src="https://github.com/TanyaYu/PopularMovies/blob/master/screenshots/reviews.png" height="500">
 
