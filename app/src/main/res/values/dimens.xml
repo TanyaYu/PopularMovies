@@ -1,5 +1,35 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="movie_item_favorite_mark_padding">5dp</dimen>
+    <dimen name="movie_item_favorite_mark_size">35dp</dimen>
+
+    <dimen name="movie_main_data_favorite_btn_radius">50dp</dimen>
+    <dimen name="movie_main_data_favorite_btn_padding">10dp</dimen>
+
+    <dimen name="item_description_text_size">18sp</dimen>
+
+    <dimen name="title_caption_text_size">18sp</dimen>
+    <dimen name="title_caption_padding">10dp</dimen>
+
+    <dimen name="activity_main_error_message_text_size">20sp</dimen>
+    <dimen name="activity_main_error_message_padding">10sp</dimen>
+
+    <dimen name="activity_movie_details_title_padding">20dp</dimen>
+    <dimen name="activity_movie_details_title_text_size">32sp</dimen>
+
+    <dimen name="movie_main_data_padding_bottom">10dp</dimen>
+    <dimen name="movie_main_data_tagline_padding">10dp</dimen>
+    <dimen name="movie_main_data_tagline_text_size">20sp</dimen>
+    <dimen name="movie_main_data_poster_margin">10dp</dimen>
+    <dimen name="movie_main_data_vote_avg_text_size">32sp</dimen>
+    <dimen name="movie_main_data_vote_stars_text_size">20sp</dimen>
+    <dimen name="movie_main_data_overviews_text_size">18sp</dimen>
+    <dimen name="movie_main_data_overviews_padding">10dp</dimen>
+
+    <dimen name="review_item_icon_size">50dp</dimen>
+    <dimen name="review_item_icon_padding">10dp</dimen>
+    <dimen name="review_item_review_padding">10dp</dimen>
+    <dimen name="review_item_review_text_size">18sp</dimen>
+
+    <dimen name="trailer_item_icon_size">50dp</dimen>
+    <dimen name="trailer_item_icon_padding">10dp</dimen>
 </resources>

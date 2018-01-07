@@ -51,7 +51,7 @@ public class MovieContract {
     }
 
     /**
-     * Trailer table
+     * Movie trailer table
      */
     public static final class TrailerEntry implements BaseColumns {
 
@@ -82,7 +82,7 @@ public class MovieContract {
     }
 
     /**
-     * Review table
+     * Movie Review table
      */
     public static final class ReviewEntry implements BaseColumns {
         public static final Uri CONTENT_URI = BASE_CONTENT_URI.buildUpon()

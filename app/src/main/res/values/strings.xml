@@ -25,4 +25,8 @@
     <string name="favorite_movies">Favorite</string>
     <string name="favorite_notification"><xliff:g id="name">%1s</xliff:g> is added to favorite</string>
     <string name="unfavorite_notification"><xliff:g id="name">%1s</xliff:g> is removed from favorite</string>
+    <string name="movie_icon">Movie icon</string>
+    <string name="favorite_icon">Favorite</string>
+    <string name="review_icon">Review</string>
+    <string name="trailer_icon">Trailer</string>
 </resources>

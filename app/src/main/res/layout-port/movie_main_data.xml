@@ -6,48 +6,57 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="10dp">
+        android:paddingBottom="@dimen/movie_main_data_padding_bottom">
 
         <android.support.constraint.Guideline
             android:id="@+id/horizontal_middle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.5"/>
+            app:layout_constraintGuide_percent="0.5" />
 
         <ImageView
             android:id="@+id/iv_poster"
             android:layout_width="0dp"
-            android:layout_height="280dp"
-            app:layout_constraintHeight_default="wrap"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="@dimen/movie_main_data_poster_height"
+            android:layout_marginEnd="@dimen/movie_main_data_poster_margin"
+            android:layout_marginStart="@dimen/movie_main_data_poster_margin"
+            android:layout_marginTop="@dimen/movie_main_data_poster_margin"
             android:adjustViewBounds="true"
             app:layout_constraintEnd_toStartOf="@+id/horizontal_middle"
+            app:layout_constraintHeight_default="wrap"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/ic_launcher"/>
+            app:srcCompat="@mipmap/ic_launcher" />
 
         <ImageView
             android:id="@+id/iv_favorite"
-            style="@style/FavoriteIconStyle"
+            android:layout_width="@dimen/movie_item_favorite_mark_size"
+            android:layout_height="@dimen/movie_item_favorite_mark_size"
+            android:layout_gravity="end"
+            android:contentDescription="@string/favorite_icon"
+            android:paddingEnd="@dimen/movie_item_favorite_mark_padding"
+            android:paddingRight="@dimen/movie_item_favorite_mark_padding"
+            android:paddingTop="@dimen/movie_item_favorite_mark_padding"
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="@+id/iv_poster"
-            app:layout_constraintTop_toTopOf="@+id/iv_poster"/>
+            app:layout_constraintTop_toTopOf="@+id/iv_poster"
+            app:srcCompat="@drawable/ic_star" />
 
         <TextView
             android:id="@+id/tv_tag_line"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:paddingEnd="10dp"
-            android:paddingTop="10dp"
-            android:textSize="20sp"
+            android:paddingEnd="@dimen/movie_main_data_tagline_padding"
+            android:paddingRight="@dimen/movie_main_data_tagline_padding"
+            android:paddingTop="@dimen/movie_main_data_tagline_padding"
+            android:textSize="@dimen/movie_main_data_tagline_text_size"
             android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/horizontal_middle"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="This is tagline"/>
+            tools:text="This is tagline" />
 
         <TextView
             android:id="@+id/tv_vote_avg"
@@ -55,11 +64,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="32sp"
+            android:textSize="@dimen/movie_main_data_vote_avg_text_size"
             app:layout_constraintBottom_toTopOf="@+id/tv_vote_starts"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/horizontal_middle"
-            tools:text="9"/>
+            tools:text="9" />
 
         <TextView
             android:id="@+id/tv_vote_starts"
@@ -67,20 +76,25 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="20sp"
+            android:textSize="@dimen/movie_main_data_vote_stars_text_size"
             app:layout_constraintBottom_toTopOf="@+id/btn_favorite"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/horizontal_middle"
             app:layout_constraintTop_toBottomOf="@+id/tv_tag_line"
-            tools:text="@string/stars_9"/>
+            tools:text="@string/stars_9" />
 
         <Button
             android:id="@+id/btn_favorite"
-            style="@style/ButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button"
             android:onClick="favoriteBtnOnClick"
+            android:paddingEnd="@dimen/movie_main_data_favorite_btn_padding"
+            android:paddingLeft="@dimen/movie_main_data_favorite_btn_padding"
+            android:paddingRight="@dimen/movie_main_data_favorite_btn_padding"
+            android:paddingStart="@dimen/movie_main_data_favorite_btn_padding"
             android:text="@string/favorite"
+            android:textColor="@color/contrastTextColor"
             app:layout_constraintBottom_toBottomOf="@+id/iv_poster"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/horizontal_middle" />
@@ -89,10 +103,10 @@
             android:id="@+id/tv_overview"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:textSize="18sp"
+            android:paddingEnd="@dimen/movie_main_data_overviews_padding"
+            android:paddingStart="@dimen/movie_main_data_overviews_padding"
+            android:paddingTop="@dimen/movie_main_data_overviews_padding"
+            android:textSize="@dimen/movie_main_data_overviews_text_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/iv_poster"

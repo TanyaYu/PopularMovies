@@ -17,10 +17,12 @@ import static com.example.tanyayuferova.popularmovies.data.MovieContract.*;
  * Content provider
  */
 public class FavoriteMoviesProvider extends ContentProvider {
+
     public static final int CODE_FAVORITE_MOVIES = 100;
     public static final int CODE_FAVORITE_MOVIE_WITH_ID = 101;
     public static final int CODE_TRAILERS_WITH_MOVIE_ID = 201;
     public static final int CODE_REVIEWS_WITH_MOVIE_ID = 301;
+
     private static final UriMatcher sUriMatcher = buildUriMatcher();
     private FavoriteMoviesDBHelper dbHelper;
 

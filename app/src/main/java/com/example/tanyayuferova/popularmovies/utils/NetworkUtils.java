@@ -2,6 +2,8 @@ package com.example.tanyayuferova.popularmovies.utils;
 
 import android.net.Uri;
 
+import com.example.tanyayuferova.popularmovies.BuildConfig;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -21,7 +23,7 @@ public class NetworkUtils {
     private static String REVIEWS_PARAM = "reviews";
     private static String VIDEOS_PARAM = "videos";
     private static String API_KEY_PARAM = "api_key";
-    private static String API_KEY = ""; //FIXME API_KEY
+    private static String API_KEY = BuildConfig.API_KEY;
     private static String LANGUAGE_PARAM = "language";
     private static String LANGUAGE_DEFAULT = "en-US";
     private static String PAGE_PARAM = "page";

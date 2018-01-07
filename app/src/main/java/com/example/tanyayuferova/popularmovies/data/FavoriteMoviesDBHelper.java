@@ -47,7 +47,7 @@ public class FavoriteMoviesDBHelper extends SQLiteOpenHelper {
                 MovieEntry.COLUMN_ORIGINAL_TITLE + " varchar(500), " +
                 MovieEntry.COLUMN_OVERVIEW + " text not null, " +
                 MovieEntry.COLUMN_POSTER_PATH + " varchar(500) not null, " +
-                MovieEntry.COLUMN_RELEASE_DATE + " vdate not null, " +
+                MovieEntry.COLUMN_RELEASE_DATE + " date not null, " +
                 MovieEntry.COLUMN_VOTE_AVG + " varchar(15) not null, " +
                 MovieEntry.COLUMN_TAGLINE + " varchar(500));";
         db.execSQL(SQL);

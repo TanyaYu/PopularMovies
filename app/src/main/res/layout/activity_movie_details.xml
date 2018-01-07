@@ -19,42 +19,44 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
-                android:padding="20dp"
+                android:padding="@dimen/activity_movie_details_title_padding"
                 android:textColor="@color/contrastTextColor"
-                android:textSize="32sp"
-                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="@dimen/activity_movie_details_title_text_size"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="Movie title (2017)"/>
+                tools:text="Movie title (2017)" />
 
             <include
                 android:id="@+id/main_data"
                 layout="@layout/movie_main_data"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
 
             <ImageView
                 android:id="@+id/trailers_divider"
-                style="@style/SectionDivider"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_data"
-                />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/main_data" />
 
             <TextView
                 android:id="@+id/tv_trailers_caption"
+                style="@style/TitleCaption"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/trailers_divider"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                style="@style/TitleCaption"
                 android:clickable="true"
+                android:focusable="true"
                 android:onClick="trailersCaptionOnClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailers_divider"
                 tools:text="@string/trailers_caption" />
 
             <include
@@ -62,27 +64,30 @@
                 layout="@layout/trailer_item"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_trailers_caption" />
 
             <ImageView
                 android:id="@+id/reviews_divider"
-                style="@style/SectionDivider"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/trailer"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailer" />
 
             <TextView
                 android:id="@+id/tv_reviews_caption"
+                style="@style/TitleCaption"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/reviews_divider"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                style="@style/TitleCaption"
                 android:clickable="true"
+                android:focusable="true"
                 android:onClick="reviewsCaptionOnClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reviews_divider"
                 tools:text="@string/reviews_caption" />
 
             <include
@@ -90,8 +95,8 @@
                 layout="@layout/review_item"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_reviews_caption" />
 
         </android.support.constraint.ConstraintLayout>
